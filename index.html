@@ -27,12 +27,14 @@
         <nav class="navbar navbar-expand-md bg-warning navbar-dark fixed-top">
           <h1 class="navbar-brand col-8 mx-5" href="#">Dansam Pizza Place</h1>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse align-items-center col-4" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#variety-section">Pizza Varieties</a>
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#order">Order</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact-section">Contact Info</a>
@@ -60,26 +62,136 @@
           <h2 class="headings">About Us</h2>
         </div>
         <div class="col-12 my-2 d-flex">
-          <div class="col-6 my-2 mx-5 py-5 px-5">
+          <div class="col-6 my-2 mx-5 py-3 px-5">
             <img src="assets/pizza-serving.png" alt="">
           </div>
           <div class="col-6 my-2 py-5 mr-5 pr-5">
             <h4 class="headings text-center text-danger" style="font-size: x-large;">Welcome to Dansam Pizza Place!</h4>
             <p class="col-12 text-center" style="font-size: large;">This is your all-time Pizza point in Nairobi City. <br> We care about your needs, <br> yeah, quality is our quest! Varieties of Pizza available <br> at affordable prizes. And hey! Quantity cannot just <br> go unnoticed at Dansam Pizza Place!</p>
-            <!-- <div class="accordion-button text-center"> -->
-              <!-- <p><a href="#" class="button">Order</a></p> -->
-            <!-- </div> -->
           </div>
         </div>
       </div>
       <!-- container3 menu -->
-      <div class="container-fluid">
+      <div class="container-fluid" id="menu">
         <div class="col-12">
-          <h2 class="headings text-center my-3">Our Menu</h2>
+          <h2 class="headings text-center mb-3">Our Menu</h2>
         </div>
-        <div class="col-12" style="background-image: url(assets/menu-bg.jpeg);background-position: center;background-size: cover;height: 70vh;">
-          
+        <div class="col-12" style="background-image: url(assets/menu-bg.jpeg);background-position: center;background-size: cover;height: 80vh;">
+         <div class="col-12 my-3 py-3">
+          <h4 class="headings text-dark text-lg-center">Our Pizza Sizes and their Prices</h4>
+         </div>
+         <div class="col-12 d-flex align-items-center">
+           <div class="col-4 ml-5 pl-5">
+             <img src="assets/pizza-small.jpeg" alt="#">
+             <h5 class="col-12 text-center text-white my-3">Small: Kshs.500</h5>
+           </div>
+           <div class="col-4">
+            <img src="assets/pizza-m.jpeg" alt="#">
+            <h5 class="col-12 text-center text-white my-3">Medium: Kshs.800</h5>
+           </div>
+           <div class="col-4">
+            <img src="assets/pizza-l.jpeg" alt="#">
+            <h5 class="col-12 text-center text-white my-3">Large: Kshs.1000</h5>
+           </div>
+         </div>
+        <div class="row">
+          <div class="col-4 text-center">
+            <h4 class="headings">Our Varieties</h4>
+            <div class="form-control bg-transparent">
+             <label for="varieties" class="text-white">Available flavours:</label>
+             <select name="flavours" id="flavours">
+              <option disabled selected value="flavours">Flavours</option>
+              <option value="bbq steak">Bbq Steak</option>
+              <option value="bbq chicken">Bbq Chicken</option>
+              <option value="hawaiian">Hawaiian</option>
+              <option value="meat deluxe">Meat deluxe</option>
+              <option value="regina">Regina</option>
+             </select>
+            </div>
+          </div>
+          <div class="col-4 text-center">
+           <h4 class="headings">Our Toppings</h4>
+           <div class="form-control bg-transparent">
+            <label for="varieties" class="text-white">Available Toppings:</label>
+            <select name="toppings" id="toppings">
+             <option disabled selected value="toppings">Toppings</option>
+             <option value="beacon">Beacon</option>
+             <option value="pineaple">Pineaple</option>
+             <option value="mushroom">Mushroom</option>
+             <option value="bbq">Bbq</option>
+             <option value="olives">Olives</option>
+            </select>
+           </div>
+         </div>
+         <div class="col-4 text-center">
+          <h4 class="headings">Our Crust Varieties</h4>
+          <div class="form-control bg-transparent">
+           <label for="varieties" class="text-white">Available Crust:</label>
+           <select name="crust" id="crust">
+            <option disabled selected value="Crust">Crusts</option>
+            <option value="crispy">Crispy</option>
+            <option value="stuffed">Stuffed</option>
+            <option value="Gluten-free">Glutten-free</option>
+           </select>
+          </div>
         </div>
+        </div>
+      </div>
+      <!-- container Order -->
+      <div class="container-fluid" id="order">
+        <div class="col-12">
+          <h2 class="headings text-center my-3">Make Order</h2>
+        </div>
+        <div class="form-group row g-3 bg-success">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 text-center">
+              <form class="col-sm-6 offset-sm-3 text-center">
+                <fieldset>
+                  <label>Choose your Flavour:</label>
+                  <select class="custom-select custom-select-md mb-3 flavour" required>
+                      <option disabled selected value="flavour">Choose Flavour</option>
+                      <option value="bbq steak">Bbk Steak</option>
+                      <option value="bbq chicken">Bbq Chicken</option>
+                      <option value="hawaiian">Hawaiian</option>
+                      <option value="meat deluxe">Meat Deluxe</option>
+                      <option value="regina">Regina</option>
+                  </select>
+                  <label>Choose your Size:</label>
+                  <select class="custom-select custom-select-md mb-3" id="size" required>
+                      <option disabled selected value="size">Choose Size</option>
+                      <option value="regular">Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                  </select>
+                  <label for="crust">Choose your Crust:</label>
+                  <select class="custom-select custom-select-md mb-3" id="crust" required>
+                      <option disabled selected value="crust">Choose Crust</option>
+                      <option value="crispy">Crispy: Ksh.120</option>
+                      <option value="stuffed">Stuffed: Ksh.170</option>
+                      <option value="glutten-free">Glutten-free: sh.200</option>
+                  </select>
+                  <label>Select Your favourite Toppings</label>
+                  <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                      <option disabled selected value="choice">Choose Toppings</option>
+                      <option value="mushroom">Mushroom: Ksh.100</option>
+                      <option value="pineaple">Pineaple: sh.130</option>
+                      <option value="beacon">Beacon: Ksh.180</option>
+                      <option value="bbq">Bbq: Ksh. 150</option>
+                      <option value="olives">Olives: Ksh.120</option>  
+                  </select>
+                  <label for="number">Choose your Number</label>
+                  <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                </fieldset>
+              </form>
+              <a href="#summary">
+                  <button type="submit" class="btn btn-primary checkout my-2" id="checkout">
+                      Order
+                  </button>
+              </a>
+  
+          </div>
+          <div class="col-sm-2"></div>
+      </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
