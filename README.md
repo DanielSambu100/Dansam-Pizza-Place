@@ -36,7 +36,7 @@ Bootstrap5
 jQuery
 
 # Setup Instructions and Installation
-Clone this repository to a location in your file system/download zipped file.(git clone https://github.com/DanielSambu100/Delani-Studio.git)
+Clone this repository to a location in your file system/download zipped file.(git clone https://github.com/DanielSambu100/Dansam-Pizza-Place.git)
 
 Extract the file into folder.
 
