@@ -31,13 +31,13 @@
           <div class="collapse navbar-collapse align-items-center col-4" id="collapsibleNavbar">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#menu">Menu</a>
+                <a class="nav-link text-white" href="#menu">Menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#order">Order</a>
+                <a class="nav-link text-white" href="#order">Order</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact-section">Contact Info</a>
+                <a class="nav-link text-white" href="#contact-section">Contact Info</a>
               </li>    
             </ul>
           </div>  
@@ -52,7 +52,7 @@
             <h5 class="headings text-white-50 text-center">Your Palatable Pizza Partner!</h5>
           </div>
           <div class="col-12">
-            <h4 class="col-12 text-white text-center my-5" id="btn" style="border-radius: 10px;"><a href="#order">Order Now!</a></h4>
+            <h4 class="col-12 text-white text-center my-5" id="btn" style="border-radius: 10px;"><a href="#complete-order">Order Now!</a></h4>
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
         <div class="col-12">
           <h2 class="headings text-center mb-3">Our Menu</h2>
         </div>
-        <div class="col-12" style="background-image: url(assets/menu-bg.jpeg);background-position: center;background-size: cover;height: 80vh;">
+        <div class="col-12" style="background-image: url(assets/menu-bg.jpeg);background-position: center;background-size: cover;height: ;">
          <div class="col-12 my-3 py-3">
           <h4 class="headings text-dark text-lg-center">Our Pizza Sizes and their Prices</h4>
          </div>
@@ -142,7 +142,7 @@
         <div class="col-12">
           <h2 class="headings text-center my-3">Make Order</h2>
         </div>
-        <div class="form-group row g-3 bg-success pt-3 mt-3" style="height: 40vh;">
+        <div class="form-group row g-3 bg-success pt-3 mt-3" style="height: ;">
           <div class="col-sm-2"></div>
           <div class="col-sm-8 text-center">
               <form class="col-sm-6 offset-sm-3 text-center">
@@ -188,10 +188,35 @@
                       Checkout
                   </button>
               </a>
-  
           </div>
-          <div class="col-sm-2"></div>
       </div>
+<!-- complete order section -->
+<div class="order-completion" id="complete-order">
+  <h1 class="text-center my-3" id="summary">Order Completion</h1>
+  <h3 class="text-center summary my-3">Dear customer, please confirm your order below:</h3>
+  <ol id="list" class="text-center sum">
+  </ol>
+
+
+  <div class="cdata-overlay">
+      <div class="customerdata row">
+          <div class="col-sm-3"></div>
+          <form action="" class="form-group col-sm-6 data">
+              <input type="text" class="form-control cdata my-2" placeholder="Enter your Name:">
+              <input type="text" class="form-control cdata my-2" placeholder="Enter your phone number: ">
+              <input type="text" class="form-control cdata my-2" placeholder="Enter the location: ">
+              <button class="btn bg-warning text-center d-block mx-auto  my-2" style="border-radius: 20px;">Confirm Order</button>
+          </form>
+
+          <div class="col-sm-3"></div>
+      </div>
+  </div>
+  <div class="d-block mx-auto text-center">
+      <h3 class="headings">Kindly choose your prefered mode:</h3>
+      <button class='deliver bg-warning' style="border-radius: 20px;">Make Delivery</button>
+      <button class='delivernot bg-warning' style="border-radius: 20px;">Pick By Self</button>
+  </div>
+</div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
