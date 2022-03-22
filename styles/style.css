@@ -13,3 +13,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+#about {
+    margin-right: 0;
+    margin-left: 0;
+}
